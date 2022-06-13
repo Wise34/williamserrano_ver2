@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- fonr awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+  <header id="titulo">
+    <a href="#" class="brand">
+      <img src="image/logomarca.JPG">
+    </a>
+    <nav class="menu">
+      <div class="btn">
+        <i class="fas fa-times close-btn"></i>
+      </div>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Actualidad</a></li>
+        <li><a href="#">Networking</a></li>
+      </ul>
+    </nav>
+    <div class="btn">
+      <i class="fas fa-bars menu-btn"></i>
+    </div>
+  </header>
+
+  <section class="section-main">
+    <h1>Soy, William Serrano</h1>
+  </section>
+
+  <section class="section-two">
+    <h2 id="acerca_de_mi">Acerca de mi</h2>
+    <div class="foto_inicio">
+      <img id="foto_cv" src="image/foto_cv.JPG" width="400" />
+    </div>
+    <p id="introduccion">Estudiante del último ciclo de la carrera de Electrónica y Automatización Industrial, leal,
+      comprometido con el trabajo, apto para todo tipo de labor en el campo de la electrónica y la automatización. Poseo
+      sólidos conocimientos en electrónica, control de procesos, programación de PLC, electroneumática, instrumentación
+      industrial y conocimientos básicos de mecánica e hidráulica.</p>
+  </section>
+
+  <script type="text/javascript">
+    //javascript for navigation bar effect on scroll
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle('down', window.scrollY > 0);
+
+      //change logo
+      var logo = document.querySelector(".brand img");
+      if (window.scrollY > 0) {
+        logo.setAttribute('src', 'image/logomarca.JPG');
+      } else {
+        logo.setAttribute('src', 'image/logomarca.JPG');
+      }
+
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+  </script>
+  <article class="datos_contacto">
+    <h2 id="contactame">Datos de contacto</h2>
+    <a id="linkcorreo" href="mailto:william.serrano@tecsup.edu.pe" target="_BLANK">Correo</a>
+    <br>
+    <p id="correo">william.serrano@tecsup.edu.pe</p>
+    <br><a id="linkedin" href="https://www.linkedin.com/in/serranoariaswilliameduardo/" target="_BLANK">Linkedin</a>
+    <br>
+    <p id="celular"> Celular: +51 960 444 969</p>
+  </article>
+
+  <section class="titulo_section">
+    <h2 class="subtitulo_section">Perfil profesional</h2>
+    <br>
+    <br>
+    <h3 class="subtitulo__3">Aptitules/habilidades</h3>
+    <div class="foto_perfil">
+      <img id="foto_habilidad" src="image/programacion_plc.jpg" height="400" />
+    </div>
+    <ul>
+      <li class="lista_normal">- Control de procesos</li>
+      <li class="lista_normal">- Instrumentación industrial</li>
+      <li class="lista_normal">- Programación PLC y microcontroladores</li>
+      <li class="lista_normal">- Diseño electrónico</li>
+      <li class="lista_normal">- Instalaciones electricas</li>
+    </ul>
+    <br>
+    <br>
+
+    <h3 class="subtitulo__3">Objetivo Profesional</h3>
+    <div class="foto_perfil">
+      <img id="foto_habilidad" src="image/control_procesos.jpg" height="400" />
+    </div>
+    <p id="objetivo_profesional">Tengo el objetivo de unirme a un equipo de trabajo que tenga especial enfoque en el
+      área de control y automatización de procesos en el que pueda poner en práctica los conocimientos adquiridos
+      durante mi formación académica, referente a mis expectativas considero importante la existencia de una clara
+      cultura de trabajo y la posibilidad de obtener especializaciones, de igual forma espero estar activamente
+      involucrado en el cumplimiento de los objetivos planificados</p>
+    <br>
+    <br>
+    <h3 class="subtitulo__3">Videocurriculum</h3>
+    <div class="foto_perfil">
+      <img id="foto_habilidad" src="image/videocurriculum.png" height="400" />
+    </div>
+    <a id="videocurriculum" href="https://www.youtube.com/watch?v=yu_OLK9danc" target="_BLANK">Youtube</a>
+    <br>
+    <br>
+    <br>
+    <p id="frase__favorita">"Date la oportunidad de afrontar desafíos que te permitan superar tus límites y mejorar tu
+      visión del mundo"</p>
+    <br>
+    <br>
+  </section>
+
+  <section class="titulo_section">
+    <h2 class="subtitulo_section">Proyectos</h2>
+    <h3 class="subtitulo__3">Pasantias</h3>
+    <div>
+      <img class="foto_normal" src="image/empresa_pasantia.jpg"/>
+    </div>
+    <h4 class="subtitulo__4">Actividades realizadas</h4>
+    <div>
+      <img class="foto_normal" src="image/pozo_tierra.PNG" height="300" />
+      <img class="foto_normal" src="image/laboratorio.PNG" height="300" />
+      <img class="foto_normal" src="image/mimosa_radiofrecuencia.jpg" height="300" />
+    </div>
+    <br>
+    <h4 class="subtitulo__4">Aprendizaje</h4>
+    <p class="parrafo_normal">
+      En cuando a mi experiencia laboral realice pasantías en la empresa AQP PERU DATA S.R.L. donde me desempeñe en el área de operaciones.
+      Como pasante participe en instalaciones de pozos a tierra y la instalación del cableado eléctrico en un laboratorio de cómputo en la escuela de Antropología de la UNSA. También participe activamente en la instalación de los equipos de radiofrecuencia MIMOSA, los cuales fueron instalados en las antenas de Biomédicas, Ingenierías y rectorado de la UNSA, obteniendo así experiencia en trabajos de altura.
+    </p>
+
+    <br>
+    <h3 class="subtitulo__3">Proyectos integradores</h3>
+    <h4 class="subtitulo__4">Torres de estacionamiento</h4>
+    <div>
+      <img class="foto_normal" src="image/vertical_estacionamiento.JPG"/>
+    </div>
+    <h4 class="subtitulo__4">Respirador artificial</h4>
+    <div>
+      <img class="foto_normal" src="image/respirador_artificial.jpeg"/>
+    </div>
+    <h4 class="subtitulo__4">Ozono para desinfeccion</h4>
+    <div>
+      <img class="foto_normal" src="image/proceso_desinfeccion.JPG"/>
+    </div>
+    <h4 class="subtitulo__4">Refrigeradora utilizando celdas Peltier</h4>
+    <div>
+      <img class="foto_normal" src="image/refrigeracion_peltier.jpeg"/>
+    </div>
+    <h3 class="subtitulo__3">Participacion en otros proyectos</h3>
+
+  </section>
+
+  <section class="titulo_section">
+    <h2 class="subtitulo_section">Actualidad</h2>
+    <h3 class="subtitulo__3">Investigaciones relacionadas</h3>
+    <h4 class="subtitulo__4">Antenas fractales</h4>
+    <h4 class="subtitulo__4">Agricultura automatizada</h4>
+    <h4 class="subtitulo__4">Machine learning</h4>
+    <h3 class="subtitulo__3">Textos sugeridos</h3>
+    <h4 class="subtitulo__4">Programacion en allen bradley</h4>
+    <h4 class="subtitulo__4">Programacion en Siemens</h4>
+    <h4 class="subtitulo__4">Instrumentacion industrial</h4>
+    <h4 class="subtitulo__4">Control Ogata</h4>
+    <h4 class="subtitulo__4">PMBOK</h4>
+    <h3 class="subtitulo__3">Noticias relacionadas al control y la automatizacion</h3>
+    <h4 class="subtitulo__4">Ferreycorp</h4>
+    <h4 class="subtitulo__4">IOT</h4>
+    <h4 class="subtitulo__4">Control automatizado</h4>
+    <h4 class="subtitulo__4">Data Science</h4>
+
+  </section>
+
+  <section class="titulo_section">
+    <h2 class="subtitulo_section">Networking</h2>
+    <!--
+    <h2 class="subtitulo_section">Actualidad</h2>
+    <h3 class="subtitulo__3">Investigaciones relacionadas</h3>
+    <h4 class="subtitulo__4">Antenas fractales</h4>
+    <h4 class="subtitulo__4">Agricultura automatizada</h4>
+    <h4 class="subtitulo__4">Machine learning</h4>
+    <h3 class="subtitulo__3">Textos sugeridos</h3>
+    <h4 class="subtitulo__4">Programacion en allen bradley</h4>
+    <h4 class="subtitulo__4">Programacion en Siemens</h4>
+    <h4 class="subtitulo__4">Instrumentacion industrial</h4>
+    <h4 class="subtitulo__4">Control Ogata</h4>
+    <h4 class="subtitulo__4">PMBOK</h4>
+    <h3 class="subtitulo__3">Noticias relacionadas al control y la automatizacion</h3>
+    <h4 class="subtitulo__4">Ferreycorp</h4>
+    <h4 class="subtitulo__4">IOT</h4>
+    <h4 class="subtitulo__4">Control automatizado</h4>
+    <h4 class="subtitulo__4">Data Science</h4>
+    -->
+
+  </section>
+
+  <footer>
+    <section>
+      <a href="#">Ir al comienzo</a>
+    </section>
+    <p>Copyright 2022</p>
+  </footer>
+</body>
+
+</html>
