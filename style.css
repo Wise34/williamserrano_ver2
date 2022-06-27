@@ -181,41 +181,39 @@
   }
 
   #linkedin {
-    color: #00008b;
+    color: yellow;
     text-align: center;
     display: inline-block;
     width: 100%;
     font-size: 1.5rem;
   }
   #linkcorreo {
-    color: #00008b;
+    color: yellow;
     text-align: center;
     display: inline-block;
     width: 100%;
     font-size: 1.5rem;
   }
   #correo {
-      color: #000000;
+      color: yellow;
       text-align: center;
       display: inline-block;
       width: 100%;
       font-size: 1.5rem;
   }
   #celular {
-      color: #000000;
+      color: yellow;
       text-align: center;
       font-size: 1.5rem;
   }
 
   #contactame {
-    color: #000000;
+    color: yellow;
     text-align: center;
     font-size: 1.5rem;
   }
   .datos_contacto {
-    background-color: #deb887;
-    color: white;
-    
+    color: red;
   }
   #introduccion {
     color: #483d8b;
@@ -287,7 +285,7 @@
     font-size: 1.5rem;
   }
   #frase__favorita {
-    color: #663399 ;
+    color: #fff ;
     text-align: center;
     width: 100%;
     font-size: 1.5rem;
@@ -298,3 +296,83 @@
     width: 100%;
     font-size: 1.3rem;
   }
+  
+/*
+Probando las columnas.
+*/
+.col {
+  *zoom: 1;
+}
+
+.col2 {
+  width: 47.5%;
+  float: left;
+  margin-right: 5%;
+  margin-bottom: 1.5rem;
+}
+.col2:nth-child(2n+2) {
+  margin-right: 0;
+}
+
+.col3 {
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+  margin-bottom: 1.5rem;
+}
+.col3:nth-child(3n+3) {
+  margin-right: 0;
+}
+/*
+Div necesario para separar contenidos y que estos no afecten a los otros divs.
+*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+
+ul {
+  list-style-type: none;
+}
+
+#section_inicio {
+  background-image: url("image/fondo_azul_oscuro.jpg");
+}
+
+.lista_competencias {
+  color: #66cdaa;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+}
+.titulo_lista_competencias {
+  color: #66cdaa;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.texto_section_inicio {
+  color: yellow;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.lista_blandas {
+  color: green;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.titulo_lista_blandas
+{
+  color: green;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
